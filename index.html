@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Form Data Master Produk</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <section>
+      <h1 class="judul-form">FORM DATA MASTER PRODUK</h1>
+      <form action="" id="formdata">
+        <label for="kodeProduk">Kode Produk</label>
+        <input type="text" id="kodeProduk" value="MD-00" disabled/>
+        <label for="nameProduk">Name Produk</label>
+        <input type="text" id="nameProduk" placeholder="Masukan Nama Produk"/>
+        <label for="harga">Harga</label>
+        <input type="number" name="harga" id="harga" placeholder="10000"/>
+        <label for="kategori">Kategori</label>
+        <select name="kategori" id="kategori">
+          <option value="makanan">Makanan</option>
+          <option value="minuman">Minuman</option>
+        </select>
+        <label for="stok">Quantity</label>
+        <input type="number" id="quantity" placeholder="100"/>
+
+        <button type="button" onclick="saveForm()">Simpan</button>
+      </form>
+    </section>
+
+    <section>
+      <table id="productTable">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Kode Produk</th>
+            <th>Nama Produk</th>
+            <th>Harga</th>
+            <th>Kategori</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    
+
+    <script src="function.js"></script>
+</body>
+</html>
